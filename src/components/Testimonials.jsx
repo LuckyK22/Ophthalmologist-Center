@@ -1,5 +1,8 @@
 import React from 'react'
-import TestimonialComponents from '../components/TestimonialComponents';
+import TestimonialComponents from './TestimonialComponents';
+import pic1 from '../assets/profile1.jpg'
+import pic2 from '../assets/profile2.jpg'
+import pic3 from '../assets/profile3.jpg'
 
 function Testimonials() {
     return (
@@ -10,14 +13,17 @@ function Testimonials() {
                         <div className="container mt-10 px-5 py-10 mx-auto">
                             <div className="flex flex-wrap -m-4">
                                 <TestimonialComponents
+                                    image={pic1}
                                     testimonialComment='Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90s cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.'
                                     testimonialName='ALPER KAMU'
-                                />
+                                    />
                                 <TestimonialComponents
+                                    image={pic2}
                                     testimonialComment='Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90s cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.'
                                     testimonialName='ALPER KAMU'
-                                />
+                                    />
                                 <TestimonialComponents
+                                    image={pic3}
                                     testimonialComment='Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90s cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.'
                                     testimonialName='ALPER KAMU'
                                 />
@@ -49,9 +55,9 @@ function Testimonials() {
                                 y2="-418.681"
                                 gradientUnits="userSpaceOnUse"
                             >
-                                <stop stop-color="#3056D3" stop-opacity="0.36" />
-                                <stop offset="1" stop-color="#F5F2FD" stop-opacity="0" />
-                                <stop offset="1" stop-color="#F5F2FD" stop-opacity="0.096144" />
+                                <stop stopColor="#3056D3" stopOpacity="0.36" />
+                                <stop offset="1" stopColor="#F5F2FD" stopOpacity="0" />
+                                <stop offset="1" stopColor="#F5F2FD" stopOpacity="0.096144" />
                             </linearGradient>
                         </defs>
                     </svg>

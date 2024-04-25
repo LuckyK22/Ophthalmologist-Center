@@ -4,12 +4,10 @@ import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import App from './App'
 import AboutPage from './pages/AboutPage'
-import Services from './pages/Services'
-import AppointmentPage from './pages/AppointmentPage'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import FrontPage from './pages/FrontPage'
-import ServiceDescriptionPage from './pages/ServiceDescriptionPage'
+import ServiceDescriptionPage from './components/ServiceDescriptionPage'
 import Pop from './components/LoginModel'
 
 const router =  createBrowserRouter([

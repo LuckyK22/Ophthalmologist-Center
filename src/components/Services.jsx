@@ -18,34 +18,33 @@ function Services() {
         };
 
         window.addEventListener('resize', handleResize);
-
-        // Cleanup function to remove the event listener when the component unmounts
         return () => {
             window.removeEventListener('resize', handleResize);
         };
-    }, []); // Empty dependency array ensures this effect runs only once on mount
+    }, []); 
 
 
 
     return (
         <>
-            <section className="body-font" id='services'>
+        <div>
+            <section className="body-font">
                 <div className="container px-5 py-16 mx-auto">
                     <div className="flex flex-wrap -m-4 text-center">
                         <div className="w-1/3 sm:w-1/2 lg:w-1/3">
-                            <img className='m-auto' width="50px" src={globe} alt="" srcset="" />
-                            <h2 className="title-font font-medium sm:text-4xl text-3xl">100+</h2>
-                            <p className="leading-relaxed">Hospitals</p>
+                            <img className='m-auto' width="50px" src={globe} alt="" srcSet="" />
+                            <h2 className="title-font font-medium sm:text-4xl text-3xl ms-3">100+</h2>
+                            <p className="leading-relaxed text-indigo-500 font-semibold lg:text-2xl sm:text-lg ms-1">Hospitals</p>
                         </div>
                         <div className="w-1/3 sm:w-1/2 lg:w-1/3">
                             <img className='m-auto' width="50px" src={crowd} alt="" />
-                            <h2 className="title-font font-medium sm:text-4xl text-3xl">10000+</h2>
-                            <p className="leading-relaxed">Patient Treated</p>
+                            <h2 className="title-font font-medium sm:text-4xl text-3xl ms-3">10000+</h2>
+                            <p className="leading-relaxed text-indigo-500 font-semibold lg:text-2xl sm:text-lg ms-1">Patient Treated</p>
                         </div>
                         <div className="w-1/3 sm:w-1/2 lg:w-1/3">
-                            <img className='m-auto' width="50px" src={eye} alt="" srcset="" />
-                            <h2 className="title-font font-medium sm:text-4xl text-3xl">1000+</h2>
-                            <p className="leading-relaxed">Eye Surgeries</p>
+                            <img className='m-auto' width="50px" src={eye} alt="" srcSet="" />
+                            <h2 className="title-font font-medium sm:text-4xl text-3xl ms-3">1000+</h2>
+                            <p className="leading-relaxed text-indigo-500 font-semibold lg:text-2xl sm:text-lg ms-1">Eye Surgeries</p>
                         </div>
                     </div>
                 </div>
@@ -53,10 +52,10 @@ function Services() {
 
 
             <section className="body-font">
-                <div className="container px-5 py-16 mx-auto">
+                <div className="container px-5 py-4 mx-auto">
                     <Swiper
                         autoplay={{
-                            delay: 4000,
+                            delay: 1500,
                             disableOnInteraction: true,
                         }}
                         modules={[Pagination, Autoplay]}
@@ -98,6 +97,7 @@ function Services() {
                     </Swiper>
                 </div>
             </section>
+            </div>
         </>
     );
 }

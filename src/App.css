@@ -1,9 +1,4 @@
-.heroSection {
-    background-image: url("./assets/eye-bg.png");
-    filter: blur(2px);
-    filter: brightness(0.8);
-    z-index: -8;
-}
+.heroSection {}
 
 swiper {
     width: 100%;
@@ -29,26 +24,21 @@ swiper {
     width: 100%;
 }
 
-.ant-upload-wrapper .ant-upload-drag p.ant-upload-text,
-.ant-upload-wrapper .ant-upload-drag p.ant-upload-hint,
-.ant-form-item-required,
-.ant-form-item .ant-form-item-label>label {
-    color: white !important;
+.-z-50 {
+    z-index: -9999;
+    position: absolute;
 }
 
-.react-responsive-modal-modal{
-    background-color: rgb(21, 20, 20) !important;
-}
-
-.react-responsive-modal-modal{
+.react-responsive-modal-modal {
     width: 32%;
 }
+
 .react-responsive-modal-container {
     backdrop-filter: blur(5px);
 }
 
 @media (max-width: 600px) {
-    .react-responsive-modal-modal{
+    .react-responsive-modal-modal {
         width: 90% !important;
     }
 }

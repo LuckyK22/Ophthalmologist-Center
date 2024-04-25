@@ -30,7 +30,6 @@ const RegisterModel = ({ stateChange }) => {
             <Modal open={open} onClose={onCloseModal} styles={{ modal: { backdropFilter: open ? "blur(15px)" : "none" } }}>
                 <div className=''>
                     <div className=' w-full p-4 pt-8 rounded-lg mt-14 mx-auto sm:border-0 lg:border-2'>
-                        {/* <div className=' w-3/4 lg:w-1/3 p-4 pt-8 rounded-lg mt-36 mx-auto sm:border-0 lg:border-2'> */}
                         <div className='text-center text-3xl font-semibold'>Register</div>
                         <Form
                             name="normal_Register"

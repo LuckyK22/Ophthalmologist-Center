@@ -55,8 +55,8 @@ function AppointmentModel() {
 
     return (
         <div className="text-center">
-            <div className="flex justify-start lg:justify-end">
-                <button className="border border-green-500 p-2 rounded-lg text-green-500" onClick={onOpenModal}>Book Appointment</button>
+            <div className="flex justify-start lg:justify-center">
+                <button className="border bg-indigo-500 p-2 rounded-lg text-white px-5" onClick={onOpenModal}>Book Appointment</button>
             </div>
             <Modal classNames='bg-indigo-500' open={open} onClose={onCloseModal}>
                 <div className='my-6 w-full mx-auto'>
@@ -146,7 +146,7 @@ function AppointmentModel() {
                             <Form.Item
                                 className='w-1/2'
                             >
-                                <TimePicker value={value} onChange={onTimeChange} />;
+                                <TimePicker value={value} onChange={onTimeChange} />
                             </Form.Item>
 
                             <Form.Item

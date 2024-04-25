@@ -130,7 +130,7 @@ const AppointmentPage = () => {
                         <Form.Item
                             className='w-1/2'
                         >
-                            <TimePicker value={value} onChange={onTimeChange} />;
+                            <TimePicker value={value} onChange={onTimeChange} />
                         </Form.Item>
 
                         <Form.Item

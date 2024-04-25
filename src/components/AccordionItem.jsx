@@ -8,14 +8,14 @@ const AccordionItem = ({ header, text }) => {
         setActive(!active);
     };
     return (
-        <div className="mb-8 w-full rounded-lg p-4 sm:p-8 lg:px-6 xl:px-8 border">
+        <div className="mb-8 w-full rounded-lg p-4 sm:p-8 lg:px-6 xl:px-8 border border-black">
             <button
                 className={`faq-btn flex w-full text-left`}
                 onClick={() => handleToggle()}
             >
                 <div className="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary/5 text-primary">
                     <svg
-                        className={`fill-primary stroke-white duration-200 ease-in-out ${active ? "rotate-180" : ""
+                        className={`fill-primary stroke-black duration-200 ease-in-out ${active ? "rotate-180" : ""
                             }`}
                         width="17"
                         height="10"
@@ -31,7 +31,7 @@ const AccordionItem = ({ header, text }) => {
                 </div>
 
                 <div className="w-full">
-                    <h4 className="mt-1 text-lg font-semibold text-dark dark:text-white">
+                    <h4 className="mt-1 text-lg font-semibold text-dark ">
                         {header}
                     </h4>
                 </div>
@@ -41,7 +41,7 @@ const AccordionItem = ({ header, text }) => {
                 className={`pl-[62px] duration-200 ease-in-out ${active ? "block" : "hidden"
                     }`}
             >
-                <p className="py-3 text-base leading-relaxed text-body-color dark:text-dark-6">
+                <p className="py-3 text-base leading-relaxed text-body-color ">
                     {text}
                 </p>
             </div>

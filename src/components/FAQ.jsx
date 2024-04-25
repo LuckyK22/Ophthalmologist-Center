@@ -3,7 +3,7 @@ import AccordionItem from "../components/AccordionItem";
 
 const Accordion = () => {
     return (
-        <section className="relative z-20 overflow-hidden pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]">
+        <section className="relative z-20 overflow-hidden pb-12 dark:bg-dark lg:pb-[90px] lg:pt-[24px]">
             <div className="container mx-auto">
                 <div className="-mx-4 flex flex-wrap">
                     <div className="w-full px-4">
@@ -76,9 +76,9 @@ const Accordion = () => {
                             y2="-418.681"
                             gradientUnits="userSpaceOnUse"
                         >
-                            <stop stop-color="#3056D3" stop-opacity="0.36" />
-                            <stop offset="1" stop-color="#F5F2FD" stop-opacity="0" />
-                            <stop offset="1" stop-color="#F5F2FD" stop-opacity="0.096144" />
+                            <stop stopColor="#3056D3" stopOpacity="0.36" />
+                            <stop offset="1" stopColor="#F5F2FD" stopOpacity="0" />
+                            <stop offset="1" stopColor="#F5F2FD" stopOpacity="0.096144" />
                         </linearGradient>
                     </defs>
                 </svg>

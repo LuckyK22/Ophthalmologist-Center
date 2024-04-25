@@ -1,18 +1,14 @@
-import { useState } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
-import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
-import LoginModel from './LoginModel';
-import RegisterModel from './RegisterModel';
+import AppointmentModel from '../components/AppointmentModel';
+
 
 
 const navigation = [
     { name: 'Home', href: '/', current: false },
     { name: 'About', href: '/about', current: false },
-    { name: 'Login', href: '/login', current: false },
-    { name: 'Register', href: '/register', current: false },
 ]
 
 function classNames(...classes) {
@@ -20,6 +16,7 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
+
 
     return (
         <Disclosure as="nav" className="bg-transparent fixed top-0 w-full z-50 backdrop-blur-md">
@@ -39,28 +36,29 @@ export default function Navbar() {
                                 </Disclosure.Button>
                             </div>
                             <div className="flex items-center justify-between sm:items-stretch w-full ms-12">
-                                <div className="flex flex-shrink-0 items-center">
+                                <Link to="/" className="flex flex-shrink-0 items-center gap-3">
                                     <img
                                         className="h-8 w-auto"
                                         src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                                         alt="Your Company"
                                     />
-                                </div>
+                                    <p className='font-semibold'>Ophthalmologist Center</p>
+                                </Link>
                                 <div className="hidden sm:ml-6 sm:block">
                                     <div className="flex space-x-4">
                                         <Link
                                             to='/'
-                                            className='text-gray-300 hover:bg-indigo-400 hover:text-white rounded-md px-3 py-2 text-sm font-medium'>
+                                            className=' hover:bg-indigo-400 font-semibold rounded-md px-3 py-2 text-sm hover:text-white hover:scale-105 duration-300'>
                                             Home
                                         </Link>
                                         <Link
                                             to='about'
-                                            className='text-gray-300 hover:bg-indigo-400 hover:text-white rounded-md px-3 py-2 text-sm font-medium'>
+                                            className=' hover:bg-indigo-400 font-semibold rounded-md px-3 py-2 text-sm hover:text-white hover:scale-105 duration-300'>
                                             About
                                         </Link>
-                                        <LoginModel />
-                                        <RegisterModel />
-                                        {/* ))} */}
+                                        <div className=''>
+                                            <AppointmentModel />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
